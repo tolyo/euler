@@ -11,9 +11,9 @@ val sum = (1 to target)
   .foldLeft(0)((b,a) => b+a)
 
 
-def sumDivisibleBy(n: Int): Int = {
+def sumDivisibleBy(n: Int) = {
   val p = target / n
-  return n * p * (p + 1) / 2
+  n * p * (p + 1) / 2
 }
 
 val sumOptimized = sumDivisibleBy(3) + sumDivisibleBy(5) - sumDivisibleBy(15)
