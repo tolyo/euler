@@ -4,15 +4,15 @@
   Find the sum of all the multiples of 3 or 5 below 1000.
   */
 
-val target = 999
+val TARGET = 999
 
-val sum = (1 to target)
+val sum = (1 to TARGET)
   .filter({p => p % 3 == 0 || p % 5 == 0 })
   .foldLeft(0)((b,a) => b+a)
 
 
 def sumDivisibleBy(n: Int) = {
-  val p = target / n
+  val p = TARGET / n
   n * p * (p + 1) / 2
 }
 
