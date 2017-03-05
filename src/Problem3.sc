@@ -5,7 +5,7 @@ import scala.annotation.tailrec
   * What is the largest prime factor of the number 600851475143 ?
   */
 
-val TARGET = 13195;
+val TARGET = 600851475143L;
 
 @tailrec
 def largestPrime(primes: List[Int], range: List[Int]): Int = {
@@ -22,5 +22,5 @@ def sieve(primes: List[Int], range: List[Int]): Tuple2[List[Int], List[Int]] = {
 
 def isFactor(target: Long, n: Long): Boolean = target % n == 0
 
-largestPrime(Nil, (2 until TARGET.toInt).toList)
+println(largestPrime(Nil, (2 until Math.sqrt(TARGET).toLong.toInt).toList))
 
