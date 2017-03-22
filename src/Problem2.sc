@@ -8,7 +8,7 @@ import scala.annotation.tailrec
   *  do not exceed four million, find the sum of the even-valued terms.
   */
 
-val LIMIT = 4000000;
+val LIMIT = 4000000
 
 @tailrec
 def fib(limit: Int, acc: List[Int] = 2 :: 1 :: Nil): List[Int] = {

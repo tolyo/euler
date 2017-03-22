@@ -5,7 +5,7 @@ import scala.annotation.tailrec
   * What is the largest prime factor of the number 600851475143 ?
   */
 
-val TARGET = 600851475143L;
+val TARGET = 600851475143L
 
 @tailrec
 def largestPrime(primes: List[Int], range: List[Int]): Int = {
