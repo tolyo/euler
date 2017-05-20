@@ -11,9 +11,9 @@ import scala.annotation.tailrec
 val LIMIT = 4000000
 
 @tailrec
-def fib(limit: Int, acc: List[Int] = 2 :: 1 :: Nil): List[Int] = {
-  if (acc.head > limit) return acc;
+def fib(limit: Int, acc: List[Int] = 2 :: 1 :: Nil): List[Int] =
+  if (acc.head > limit) acc
   else fib(limit, acc.head + acc.tail.head :: acc)
-}
+
 
 fib(LIMIT).filter { _ % 2 == 0 }.sum
