@@ -15,4 +15,11 @@ def findRemainder(limit: Int): Int = {
   if (!hasRemainder(target, limit)) limit
   else findRemainder(limit + target)
 }
+
+
+
+val startTime: Long  = System.currentTimeMillis()
 println(findRemainder(target))
+val endTime: Long  = System.currentTimeMillis()
+
+endTime - startTime
